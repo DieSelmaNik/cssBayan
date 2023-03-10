@@ -2,7 +2,7 @@ body {
     background-image: url(img/bayan.gif);
     background-size: 150px;
 }
-#main {
+.main {
     max-width: 950px;
     margin: auto;
     font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -17,7 +17,7 @@ body {
     padding: 10px;
 }
 
-#main:hover .cross {
+.main:hover .cross {
     color: #ffa500;
 }
 
@@ -44,14 +44,6 @@ h2 {
     transition: 0.5s ease;
 }
 
-.cross {
-    color: rgba(100%, 100%, 100%, 95%);
-    font-weight: bold;
-    font-size: 20px;
-    height: 30px;
-    transition: 0.5s ease;
-}
-
 .container:hover .cross {
     color: black;
     transform: rotate(135deg);
@@ -60,6 +52,18 @@ h2 {
 
 .container:hover .content {
     max-height: 100vh;
+}
+
+.container:active .meme-header {
+    color: blue;
+}
+
+.cross {
+    color: rgba(100%, 100%, 100%, 95%);
+    font-weight: bold;
+    font-size: 20px;
+    height: 30px;
+    transition: 0.5s ease;
 }
 
 #last-cont {
@@ -98,11 +102,16 @@ input[type="radio"]:checked+label .content {
 }
 
 input[type="radio"]:checked+label .cross {
-    transform:rotate(135deg)
+    transform:rotate(135deg);
+    color: black;
+}
+
+input[type="radio"]:checked+label .meme-header {
+    color: black;
 }
 
 @media (max-width: 1180px) {
-    #main {
+    .main {
         border-color: black;
         border-radius: 30px;
     }
@@ -119,7 +128,24 @@ input[type="radio"]:checked+label .cross {
     }
     
     .cross {
-        color: #ffa500
+        color: #ffa500;
+    }
+    
+    .container:hover .content {
+        max-height: 0;
+    }
+    
+    .container:hover .cross {
+        color: #ffa500;
+        transform: rotate(0deg);
+    }
+    
+    .container:hover .meme-header {
+        color: #ffa500;
+    }
+    
+    .container:active .meme-header {
+        color: #ffa500;
     }
 }
 
@@ -133,7 +159,7 @@ input[type="radio"]:checked+label .cross {
         color: #ffa500;
     }
     
-    #main {
+    .main {
         background-color: azure;
     }
     
