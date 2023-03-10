@@ -1,0 +1,76 @@
+#main {
+    width: 800px;
+    margin: auto;
+    font-family: Gill Sans, sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+.container {
+    color: #ffa500;
+    border-bottom: 2px solid darkgrey;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease;
+}
+
+.container:hover {
+    color: black;
+    transition: 0.5s ease;
+    background-color: aquamarine;
+}
+
+.cross {
+    color:#ffa500;
+    font-weight: bold;
+    font-size: 20px;
+    height: 30px;
+    transition: 0.5s ease;
+}
+
+.container:hover .cross {
+    color: black;
+    transform: rotate(135deg);
+    transition: 0.5s ease;
+}
+
+.container:hover .content {
+    max-height: 100vh;
+}
+
+input[type="radio"] {
+ appearance: none;
+}
+
+.meme-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+input[type="radio"]:checked+label .content {
+    max-height: 100vh;
+}
+
+input[type="radio"]:checked+label .cross {
+    transform:rotate(135deg)
+}
