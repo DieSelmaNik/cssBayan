@@ -122,11 +122,11 @@ input[type="radio"]:checked+label .meme-header {
     
     h1 {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-        font-size: 25px;
+        font-size: 3rem;
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 2rem;
     }
     
     .container {
@@ -162,11 +162,11 @@ input[type="radio"]:checked+label .meme-header {
 
 @media (max-width: 568px) {
     h2 {
-        font-size: 25px;
+        font-size: 1.2rem;
     }
    
     h1 {
-        font-size: 30px;
+        font-size: 2.2rem;
         color: #ffa500;
     }
     
