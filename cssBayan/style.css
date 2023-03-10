@@ -1,0 +1,184 @@
+body {
+    background-image: url(img/bayan.gif);
+    background-size: 100px;
+}
+.main {
+    max-width: 50vw;
+    margin: auto;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: rgba(100%, 100%, 100%, 95%);
+    border-radius: 50px 50px 50px 140px;
+    border: 3px solid darkgrey;
+}
+
+.main-container {
+    max-width: 40vw;
+    margin: auto;
+    padding: 5px;
+}
+
+.main:hover .cross {
+    color: #ffa500;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+.container {
+    color: #ffa500;
+    border-bottom: 2px solid darkgrey;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease;
+}
+
+.container:hover {
+    color: black;
+    transition: 0.5s ease;
+}
+
+.container:hover .cross {
+    color: black;
+    transform: rotate(135deg);
+    transition: 0.5s ease;
+}
+
+.container:hover .content {
+    max-height: 100vh;
+}
+
+.container:active .meme-header {
+    color: blue;
+}
+
+.cross {
+    color: rgba(100%, 100%, 100%, 95%);
+    font-weight: bold;
+    font-size: 20px;
+    height: 30px;
+    transition: 0.5s ease;
+}
+
+#last-cont {
+    border: none;
+}
+
+input[type="radio"] {
+ appearance: none;
+}
+
+.meme-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid darkgrey;
+    border-radius: 40px 40px 40px 200px;
+    margin-bottom: 10px;
+    background-color: floralwhite;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+input[type="radio"]:checked+label .content {
+    max-height: 100vh;
+}
+
+input[type="radio"]:checked+label .cross {
+    transform:rotate(135deg);
+    color: black;
+}
+
+input[type="radio"]:checked+label .meme-header {
+    color: black;
+}
+
+@media (max-width: 1180px) {
+    .main {
+        border-color: black;
+        border-radius: 30px;
+        max-width: 85vw;
+    }
+    .main-container {
+        max-width: 80vw;
+    }
+    
+    h1 {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        border-color: black;
+    }
+    
+    .img-container {
+        border-color: black;
+        border-radius: 40px;
+    }
+    
+    .cross {
+        color: #ffa500;
+    }
+    
+    .container:hover .content {
+        max-height: 0;
+    }
+    
+    .container:hover .cross {
+        color: #ffa500;
+        transform: rotate(0deg);
+    }
+    
+    .container:hover .meme-header {
+        color: #ffa500;
+    }
+    
+    .container:active .meme-header {
+        color: #ffa500;
+    }
+}
+
+@media (max-width: 568px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+   
+    h1 {
+        font-size: 2.2rem;
+        color: #ffa500;
+    }
+    
+    .main {
+        background-color: azure;
+    }
+    
+    img {
+        width: 200px;
+    }
+    
+    body {
+        background-image: none;
+    }
+}
