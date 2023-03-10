@@ -1,9 +1,9 @@
 body {
     background-image: url(img/bayan.gif);
-    background-size: 150px;
+    background-size: 100px;
 }
 .main {
-    max-width: 950px;
+    max-width: 50vw;
     margin: auto;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: rgba(100%, 100%, 100%, 95%);
@@ -12,9 +12,9 @@ body {
 }
 
 .main-container {
-    max-width: 800px;
+    max-width: 40vw;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
 }
 
 .main:hover .cross {
@@ -83,7 +83,7 @@ input[type="radio"] {
 .img-container {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
     cursor: pointer;
     border: 2px solid darkgrey;
@@ -114,17 +114,28 @@ input[type="radio"]:checked+label .meme-header {
     .main {
         border-color: black;
         border-radius: 30px;
+        max-width: 85vw;
+    }
+    .main-container {
+        max-width: 80vw;
     }
     
     h1 {
         font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-size: 25px;
     }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
     .container {
         border-color: black;
     }
     
     .img-container {
         border-color: black;
+        border-radius: 40px;
     }
     
     .cross {
@@ -163,12 +174,8 @@ input[type="radio"]:checked+label .meme-header {
         background-color: azure;
     }
     
-    .img-container {
-        border-radius: 10px;
-    }
-    
     img {
-        width: 250px;
+        width: 200px;
     }
     
     body {
