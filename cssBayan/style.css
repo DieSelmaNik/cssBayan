@@ -104,32 +104,48 @@ input[type="radio"]:checked+label .cross {
 @media (max-width: 1180px) {
     #main {
         border-color: black;
+        border-radius: 30px;
     }
     
     h1 {
         font-family: 'Comic Sans MS', cursive, sans-serif;
     }
     .container {
-        border-bottom: black;
+        border-color: black;
     }
     
     .img-container {
         border-color: black;
+    }
+    
+    .cross {
+        color: #ffa500
     }
 }
 
 @media (max-width: 568px) {
     h2 {
         font-size: 25px;
-}
+    }
    
     h1 {
         font-size: 30px;
         color: #ffa500;
-        font-family: 'Comic Sans MS', cursive, sans-serif;
     }
     
     #main {
-        background-color: beige;
+        background-color: azure;
+    }
+    
+    .img-container {
+        border-radius: 10px;
+    }
+    
+    img {
+        width: 250px;
+    }
+    
+    body {
+        background-image: none;
     }
 }
